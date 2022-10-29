@@ -1,0 +1,27 @@
+service: apfest2022-hackathon-go
+
+frameworkVersion: ">=3.0"
+
+provider:
+  name: aws
+  runtime: go1.x
+  region: us-west-2
+
+functions:
+  hello:
+    handler: bin/hello
+    events:
+      - httpApi:
+          path: /hello
+          method: get
+  world:
+    handler: bin/world
+    events:
+      - httpApi:
+          path: /world
+          method: get
+
+package:
+  patterns:
+    - '!./**'
+    - ./bin/**
