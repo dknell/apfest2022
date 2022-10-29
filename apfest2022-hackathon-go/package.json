@@ -1,7 +1,5 @@
 {
   "name": "apfest2022-hackathon-go",
   "version": "0.0.1",
-  "description": "Example demonstrates how to setup a simple HTTP GET endpoint with golang",
-  "author": "Sebastian Borza <sebito91@gmail.com>",
-  "license": "MIT"
+  "description": "Starter golang app for APfest 2022"
 }

@@ -8,17 +8,11 @@ provider:
   region: us-west-2
 
 functions:
-  hello:
-    handler: bin/hello
+  databases:
+    handler: bin/databases
     events:
       - httpApi:
-          path: /hello
-          method: get
-  world:
-    handler: bin/world
-    events:
-      - httpApi:
-          path: /world
+          path: /databases
           method: get
 
 package:
