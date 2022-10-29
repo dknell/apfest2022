@@ -1,0 +1,19 @@
+service: apfest2022-hackathon-python
+
+frameworkVersion: ">=3.0"
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: us-west-2
+
+functions:
+  databases:
+    handler: handler.databases
+    events:
+      - httpApi:
+          path: /databases
+          method: get
+
+plugins:
+  - serverless-python-requirements

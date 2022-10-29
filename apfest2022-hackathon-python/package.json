@@ -1,0 +1,8 @@
+{
+  "name": "apfest2022-hackathon-python",
+  "version": "0.0.1",
+  "description": "Starter python app for APfest 2022",
+  "devDependencies": {
+    "serverless-python-requirements": "^6.0.0"
+  }
+}
