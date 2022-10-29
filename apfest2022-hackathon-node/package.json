@@ -1,0 +1,13 @@
+{
+  "name": "apfest2022-hackathon-node",
+  "version": "0.0.1",
+  "description": "Starter Node.js app for APfest 2022",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.101",
+    "serverless": "^3.21.0",
+    "serverless-offline": "^9.1.6",
+    "serverless-plugin-typescript": "^2.1.2",
+    "typescript": "^4.8.4"
+  }
+}

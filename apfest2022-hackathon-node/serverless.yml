@@ -1,0 +1,19 @@
+service: apfest2022-hackathon-node
+
+frameworkVersion: ">=3.0"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-west-2
+
+functions:
+  databases:
+    handler: handler.databases
+    events:
+      - httpApi:
+          path: /databases
+          method: get
+
+plugins:
+  - serverless-plugin-typescript
